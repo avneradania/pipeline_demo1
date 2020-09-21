@@ -8,13 +8,13 @@ pipeline {
                       }
                       stage('Two') {
                           steps {
-                              input('Wanna proceed?')
+                              input('Wanna proceed, Mr. Adania?')
                            }
                       }
                       stage('Three') {
                           when {
                               not {
-                                    branch "master"
+                                    branch "avneradania"
                               } 
                            }
                            steps {
